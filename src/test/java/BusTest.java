@@ -53,7 +53,7 @@ public class BusTest {
     @Test
     public void canPickUp(){
         busStop.addToQueue(person);
-        bus.removeFromBusStopQueue();
-        assertEquals(0, busStop.queueCount());
+        bus.removeFromBusStopQueue(busStop);
+        assertEquals(1, bus.passengerCount());
     }
 }
