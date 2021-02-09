@@ -29,4 +29,13 @@ public class BusTest {
         bus.addPassenger(person);
         assertEquals(1, bus.passengerCount());
     }
+
+    @Test
+    public void busCannotAddPassenger(){
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        bus.addPassenger(person);
+        assertEquals(3, bus.passengerCount());
+    }
 }
