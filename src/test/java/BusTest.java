@@ -12,6 +12,7 @@ public class BusTest {
     @Before
     public void before(){
         bus = new Bus ("Yoker", 3);
+        person = new Person();
     }
 
     @Test
